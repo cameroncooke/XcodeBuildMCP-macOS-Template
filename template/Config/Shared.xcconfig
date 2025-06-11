@@ -18,11 +18,12 @@ CURRENT_PROJECT_VERSION = 1
 MACOSX_DEPLOYMENT_TARGET = 15.4
 
 // ==========================================
-// macOS-Specific Settings
-// ==========================================
-CODE_SIGN_ENTITLEMENTS = MyProject/MyProject.entitlements
-
-// ==========================================
 // Info PLIST
 // ==========================================
 GENERATE_INFOPLIST_FILE = YES
+
+// ==========================================
+// Entitlements
+// ==========================================
+// AI agents can modify Config/MyProject.entitlements to add capabilities
+CODE_SIGN_ENTITLEMENTS = Config/MyProject.entitlements
